@@ -1,0 +1,10 @@
+
+all : client.o tools.o
+	gcc -o client client.o tools.o	
+
+client.o : client.c
+	gcc -c client.c -o client.o
+
+
+tools.o : tools.c
+	gcc -c tools.c -o tools.o
